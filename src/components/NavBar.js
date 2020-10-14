@@ -3,12 +3,13 @@ import '../index.css';
 
 
 const navStyle = {
-    display: 'flex',
-    justifyContent: 'space-between',
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
     alignItems: 'center',
+    justifyItems: 'end',
     height: '144px',
     margin: 'auto',
-    width: '80%',
+    width: '90%',
 }
 const navLinkStyle ={
     display: 'inline',
@@ -22,7 +23,7 @@ const fNavStyle ={
 }
 const sNavStyle = {
     display: 'flex',
-    justifyContent: 'space-between',
+    // justifyContent: 'space-around',
     alignItems: 'center',
     marginLeft: '7px'
 }
