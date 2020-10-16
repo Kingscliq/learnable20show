@@ -1,32 +1,10 @@
 import React from 'react'
-import '../index.css'
+import '../../index.css'
 
 function Footer() {
     return (
         <>
-            <section className="footer">
-                <div>
-                    <img src="../images/skipTop.svg" alt="to top"/>
-                </div>
-                <div className="footer-main bg-tertiary">
-                    
-                    <div>
-                        <h3 className="h3">Stay up to date on what we are doing and new learning opportunities</h3>
-                    </div>
-                    <div className="footer-desc">
-                        <div>Your Email</div>
-
-                        <div>View Privacy Policy</div>
-                    </div>
-               
-                <div>
-                    <a href="" className="btn">Subscribe</a>
-                </div>
-
-                </div>
-                
-               
-            </section>
+           
             <section>
                 <div className="main-footer">
                     <div className="footer-links">

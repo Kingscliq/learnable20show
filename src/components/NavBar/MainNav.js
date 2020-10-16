@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../index.css';
+import '../../index.css';
 
 
 const navStyle = {
@@ -61,7 +61,7 @@ const btn = {
 
 }
 
- class NavBar extends Component {
+ class MainNav extends Component {
     render() {
         return (
             <div className = "nav" style={navStyle}>
@@ -109,4 +109,4 @@ const btn = {
     }
 }
 
-export default NavBar
+export default MainNav
