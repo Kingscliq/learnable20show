@@ -24,20 +24,17 @@ const container={
     position: 'relative',
     marginTop: '20px',
     padding: '5px 50px'
-
-    
 }
 const tagDesc = {
-    //styleName: Subtitle 1;
-fontFamily: 'var(--primary-font)',
-fontSize: '16px',
-fontStyle: 'normal',
-fontWeight: '400',
-lineHeight: '26px',
-letterSpacing: '0.15000000596046448px',
-textAlign: 'left',
-height: '74px',
-width: '467px',
+    fontFamily: 'var(--primary-font)',
+    fontSize: '16px',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    lineHeight: '26px',
+    letterSpacing: '0.15000000596046448px',
+    textAlign: 'left',
+    height: '74px',
+    width: '467px',
 }
 
 const skipIcon={
@@ -90,7 +87,6 @@ const heading3 = {
     lineHeight: '44px',
     letterSpacing: '0em',
     textAlign: 'left',
-    color: 'var(--primary-color)',
     height: '44px',
     width: '550px',
 
@@ -105,15 +101,13 @@ const learnableContent ={
 }
 
 const contDesc={
-    //styleName: Body 2;
-fontFamily: 'var(--secondary-font)',
-fontSize: '15px',
-fontWeight: '400',
-lineWeight: '24px',
-letterSpacing: '0.25px',
-textAlign: 'left',
-color: 'var(--primary-color)',
-}
+    fontFamily: 'var(--secondary-font)',
+    fontSize: '15px',
+    fontWeight: '400',
+    lineWeight: '24px',
+    letterSpacing: '0.25px',
+    textAlign: 'left',
+    }
 const btnLink = {
  
     fontFamily: 'var(--secondary-font)',
@@ -123,9 +117,25 @@ const btnLink = {
     letterSpacing: '1.25px',
     textAlign: 'left',
     color: 'var(--tertiary-color)',
+    textTransform: 'uppercase'
 
 }
+const imgGrid = {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    alignItems: 'center',
+    justifyItems: 'start',
+    gridGap: '20px'
+}
 
+const bestTeam = {
+    width: '1440px',
+    height: '780px',
+    marginLeft: '0px',
+    backgroundColor: 'var(--primary-color)'
+
+
+}
 
 
 function LandingPage() {
@@ -148,18 +158,84 @@ function LandingPage() {
                    </div>
 
             </div>
-            <section style={learnable}>
+            <section style={learnable} className="">
                 <div>
                     <img src="../images/photo.png" style={secImageHero}/>
                 </div>
                 <div style={learnableContent}>
-                    <h3 style={heading3}>Learnable</h3>
-                        <p style={contDesc}>Every year, young Nigerians are launching new careers in the technology industry. Find out how Genesys is helping them do it.</p>
+                    <h3 style={heading3} className="text-primary">Learnable</h3>
+                        <p style={contDesc} className="text-primary">Every year, young Nigerians are launching new careers in the technology industry. Find out how Genesys is helping them do it.</p>
                     <div> <a href="#" style={btnLink}>Learn More</a></div>
 
                 </div>
                 
             </section>
+
+            <section style={learnable}>
+                
+                <div style={learnableContent}>
+                    <h3 style={heading3} className="text-primary">Agora</h3>
+                        <p style={contDesc} className="text-primary">We are reimagining the workplace and how people work. Find out how our co-working spaces can help you enjoy the work that you do.</p>
+                    <div> <a href="#" style={btnLink}>Learn More</a></div>
+
+                </div>
+                <div>
+                    <img src="../images/Photo (1).png" style={secImageHero}/>
+                </div>
+            </section>
+            <section style={learnable}>
+                <div>
+                    <img src="../images/Photo (2).png" style={secImageHero}/>
+                </div>
+                <div style={learnableContent}>
+                    <h3 style={heading3} className="text-primary">StartZone</h3>
+                        <p style={contDesc} className="text-primary">The business environment is harsh for early-stage businesses. We can help you rise above it all.</p>
+                    <div> <a href="#" style={btnLink}>Here’s How</a></div>
+
+                </div>
+                
+            </section>
+            <section style={learnable}>
+                <div style={imgGrid}>
+                    <div> 
+                        <img src="../images/Rectangle 42.jpg" alt="genesys"/>
+                    </div>
+                    <div>
+                        <a href="#" className="h4"><h4 alt="genesys">Genesys Ignite</h4></a>
+                    </div>
+                    <div>
+                        <img src="../images/Rectangle 38.png" alt="genesys"/>
+                    </div>
+                    <div>
+                        <img src="../images/Rectangle 38.jpg" alt="genesys"/>
+                    </div>
+                    <div>
+                        <a href="#"  className="h5"><h5>CodeVille</h5> </a> 
+                    </div>
+                    <div>
+                        <a href="#" className="h5"><h5>Pink Summer of Code</h5></a>
+                    </div>
+
+                </div>
+                <div style={learnableContent}>
+                    <h3 className="heading-large">Other things We Do</h3>
+                </div>
+                
+            </section>
+            <section style={learnable} className="bg-primary">
+            
+                
+                    <div>
+                        <img src="../images/Photo.jpg" style={secImageHero}/>
+                    </div>
+                    <div style={learnableContent}>
+                        <h3 style={heading3} className="text-light">The best team in the world</h3>
+                            <p style={contDesc} className="text-light">We work with the most amazing people our industry has to offer. They are really passionate about making a difference</p>
+                        <div> <a href="#" style={btnLink}>See team</a></div>
+                    </div>
+                
+            </section>
+
         </div>
 
     )
