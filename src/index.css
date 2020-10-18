@@ -219,9 +219,10 @@ code {
 /* MENU STYLES */
 .menu-wrap {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 5%;
+  left: 95%;
   z-index: 1;
+  display: none
 }
 
 .menu-wrap .toggler{
@@ -574,26 +575,65 @@ footer .social-icons .fa{
   text-transform: uppercase;
  
 }
+/* Responsive Designs */
 #land-hero-sm{
   display: none;
 }
+#land-desc-sm{
+  display: none;
+}
+#learnable-sec-sm, #codeville-sm{display: none}
+#agora-img-sm{display: none}
+.subscribe{
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  background: transparent;
+  outline: none
+}
 /* responsive footer */
 @media only screen and (max-width:768px){
-  .menu-wrap{
-    display: block;
+    .menu-wrap{
+        display: block;
+    }
+    section{
+        display: grid;
+        grid-template-columns: minmax(400px, 1fr);
+    }
+
+    /* // Landing Page Responsive */
+    section #land-hero{display: none}
+    #land-hero-sm{
+      display: block;
+      background-image: url('/images/Rectangle 36.jpg');
+    }
+    #land-desc{display: none}
+    #land-desc-sm{display: block}
+    #learnable-sec, #codeville, #othings{display: none}
+    #learnable-sec-sm, #agora-sec, #startzone-sec{
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #agora-img{display: none}
+    #agora-img-sm, #codeville-sm, #othings-sm{display: block;}
+    #gen-img-div{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    #othings-sm h3{
+      font-size: 2.5rem;
+      text-align: center
+    }
+    #best-team{
+      text-align: center
+    }
+    #best-team p{
+      text-align: center
+    }
+    
+    
+
   }
-  section{
-    display: grid;
-    grid-template-columns: minmax(400px, 1fr);
-}
-  section #land-hero{
-    display: none
-  }
-  #land-hero-sm{
-    display: block
-  }
-  #land-desc{
-    display: none;
-  }
-}
+    
 

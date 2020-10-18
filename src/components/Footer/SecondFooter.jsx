@@ -4,7 +4,7 @@ function SecondFooter() {
     return (
         <>
            <section>
-                <div className="hero-section" style={{height: '306px', padding: '0px'}}>
+                <div className="hero-section" id="sec-footer" style={{height: '306px', padding: '0px'}}>
                     <div>
                         <img src="../images/skipTop.svg"/>
                     </div>
@@ -14,7 +14,7 @@ function SecondFooter() {
                             </div>
                             <div className="section-flex-space-between">
                                 <div><p className="font-secondary">Your Email</p></div>
-                                <div> <img src="../images/Line 1.svg"/></div>
+                                <div> <input type="text" className="subscribe"/></div>
                                 <div><p className="font-secondary ">View Privacy Policy</p></div>
                             </div>
                     

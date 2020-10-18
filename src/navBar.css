@@ -1,3 +1,9 @@
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #f4f4f4;
+}
 .menu-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -7,6 +13,7 @@
     width: 90%;
     margin: auto;
     grid-gap: 50px;
+    
 }
 .main-menu{
     display: flex;
@@ -51,11 +58,8 @@
 }
 
 
-@media(max-width: 768px){
-    .main-menu{
-        display: none;
-    }
-    #menu-cta{
+@media(max-width:768px){
+    .main-menu, .menu-container #menu-cta{
         display: none;
     }
 }

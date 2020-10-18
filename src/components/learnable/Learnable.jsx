@@ -70,6 +70,7 @@ function Learnable() {
                         <h1 className="heading text-tertiary font-primary" style={{fontSize: '40px', fontWeight: '900'}}>305</h1>
                         <p className="font-secondary p text-primary">
                             Young Software Developers Trained</p>
+                            
                     </div>
                     <div style={divWidth}>
                         <h1 className="heading text-tertiary font-primary" style={{fontSize: '40px', fontWeight: '900'}}>2100</h1>

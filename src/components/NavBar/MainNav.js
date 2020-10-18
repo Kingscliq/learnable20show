@@ -7,7 +7,8 @@ class MainNav extends Component {
         return (
             <>
                 
-                <nav className="menu-container">
+                <nav className="bg-light">
+                    <div className="menu-container">
                     <div className="brand">
                         <img src="../images/genesys logo.png" className="brand"/>
                     </div>
@@ -43,6 +44,8 @@ class MainNav extends Component {
                                     </div>
                             </div>
                         </div>
+                    </div>
+                    
                 
                    
                 </nav>
