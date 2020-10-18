@@ -6,7 +6,7 @@ function LandingPage() {
         <div>
             <section>
                 <div className="section">
-                    <h3 className ="heading text-primary primary-font">Genesys provides             opportunities for young Nigerian techies
+                    <h3 className ="heading text-primary primary-font">Genesys provides opportunities for young Nigerian techies
                         and opportunities to grow and innovate.
                     </h3> 
                     <div></div>

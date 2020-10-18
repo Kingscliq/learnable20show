@@ -4,7 +4,10 @@
     --primary-color: #17255A;
     --secondary-color: #273043;
     --tertiary-color: #03CEA4;
-    
+    --color-warn: #EAC435;
+    --color-brown: #2D1E2F;
+    --color-orange: #F5772F;
+   
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Nunito', sans-serif;
 
@@ -41,6 +44,15 @@ code {
  .bg-default{
    background-color: #eee;
  }
+ .bg-warn{
+   background-color: var(--color-warn);
+ }
+ .bg-brown{
+    background-color: var(--color-brown);
+ }
+ .bg-orange{
+   background-color: var(--color-orange);
+ }
  .text-light{
    color: #f4f4f4
  }
@@ -64,27 +76,33 @@ code {
    font-family: var(--secondary-font)
  }
  .heading{
-   font-size: 2.5em
+   font-size: 2.5em;
+   padding: 20px 0px
  }
  .heading1{
-  font-size:  2.125em
+  font-size:  2.125em;
+  padding: 20px 0px
 }
 .heading2{
-  font-size: 1.5
+  font-size: 1.5;
+  padding: 20px 0px
 }
 .heading3{
-  font-size: 1.0625em
+  font-size: 1.0625em;
+  padding: 20px 0px
+}
+.mb-5{
+  margin-bottom: 50px
 }
 
 .btn-link{
   font-size: 15px;
   font-family: var(--secondary-font);
-  font-size: 15px;
   font-style: normal;
   font-weight: 600;
   line-height: 17px;
   letter-spacing: 1.25px;
-
+  text-transform: uppercase;
 }
 .btn-bordered{
   border: 1px solid var(--primary-color);
@@ -108,7 +126,6 @@ code {
    align-items: center;
    padding: 40px;
 }
-
 .section-column-2{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -126,23 +143,58 @@ code {
   justify-content: space-between;
   /* align-items: center; */
   flex-direction: column;
-  height: 30%
+  /* height: 50%; */
 }
 
+.section-col-4{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  /* align-items: center; */
+  width: 100%;
+}
+.section-row-3{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: start;
+  align-items: center
+
+}
 .grid-gap-20{
   grid-gap: 20px;
+}
+.grid-gap-50{
+  grid-column-gap: 50px
 }
 
  .section img{
    width: 100%
  }
+ .section-column-2 img{
+   width: 100%
+ }
+ .section-column-4 img{
+   width: 100%;
+ }
 
  .hero-section{
-  display: grid;
-  grid-template-columns:10% 1fr;
-  justify-items: center;
-  align-items: center;
-  padding: 40px;
+    display: grid;
+    grid-template-columns:10% 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 40px;
+ }
+ .profile{
+    height: 452px;
+    width: 452px;
+    border-radius: 50%;
+    position: relative;
+  
+ }
+ .profile img{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
  }
 
 /* MENU STYLES */
@@ -379,4 +431,92 @@ code {
 .main-footer{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.nav ul{
+  list-style-type: none;
+}
+.nav > ul > li{
+  display: inline;
+  padding: 20px;
+
+}
+.nav > ul > li > a{
+    font-family: var(--secondary-font);
+    color: #eeeeee;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+}
+.circle{
+  height: 250px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: left;
+  border-radius: 50%;
+  box-shadow: 4px 4px 40px #333;
+  z-index: 22
+}
+.learnableHero{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('/images/Rectangle 4 (3).jpg');
+  height: 460px;
+  background-size: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
+}
+.tiny-circle{
+  height:56px;
+  width: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
+.text-grid-card{
+  height: 339px;
+  width: 310px;
+  padding: 38px 28px 48px
+}
+.image-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.image-grid-3{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+}
+.image-grid-3 figcaption{
+  width: 152.62px
+}
+.faq{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.faq > ul{
+  width: 500px
+}
+.faq > ul > li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 20px
 }
