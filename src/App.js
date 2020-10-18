@@ -8,6 +8,7 @@ import Learnable from './components/learnable/Learnable'
 import SoftDev from './components/learnableSoftDev/SoftDev'
 import ProductDes from './components/learnableProdDes/ProductDes'
 import Footer from './components/Footer/Footer'
+import SecondFooter from './components/Footer/SecondFooter'
 
 
 function App() {
@@ -17,11 +18,12 @@ function App() {
       <Todos /> */}
       <NavBar/>
       <SecondaryNav/>
-      <ProductDes/>
+      <SecondFooter/>
+      {/* <ProductDes/> */}
       {/* <Learnable/> */}
       {/* <SoftDev/> */}
       {/* <LandingPage/> */}
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 }

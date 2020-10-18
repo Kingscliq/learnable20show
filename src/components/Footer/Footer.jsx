@@ -6,38 +6,45 @@ function Footer() {
         <>
            
             <section>
-                <div className="main-footer">
+                <div className="main-footer font-secondary text-primary">
                     <div className="footer-links">
-                        <ul>
-                            <li><a href="">Build Software</a></li>
-                            <li><a href="">Design Different</a></li>
-                            <li><a href="">Apply Your Knowledge</a></li>
-                            <li><a href="">FAQ</a></li>
+                        <ul style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height:'200px'}}>
+                            <li><p><a href="" className="btn-link text-primary">Build Software</a></p></li>
+                            <li><p><a href=""  className="btn-link text-primary">Design Different</a></p></li>
+                            <li><p><a href=""  className="btn-link text-primary">Apply Your Knowledge</a></p></li>
+                            <li><p><a href=""  className="btn-link text-primary">FAQ</a></p></li>
                         </ul>
                         
                     </div>
                     
-                    <div className="footer-address">
-                        <div>Our Local Campus center: Kilometer 7, Enugu/Port Harcourt, 
+                    <div className="footer-address" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height:'150px'}}>
+                        <div>
+                            Our Local Campus center: Kilometer 7, Enugu/Port Harcourt, 
                             Expressway, Centenary City, Enugu. Nigeria
                         </div>
+                        <div><a href="" className="btn-link">Get in touch</a></div>
                     </div>
                     <div className="">
                         <img src="../images/image 32.jpg" alt="genesys"/>
                     </div>
-                    <div className="footer-slogan">
-                    Learnable is proud to be a collaborative effort of all the arms of our product team
+                    <div className="footer-slogan" style={{alignSelf: 'center'}}>
+                        <p className="p">Learnable is proud to be a collaborative effort of all the arms of our product team
+                            </p>
+                            <div><a href="" className="btn-link text-primary">Head to Devstudio</a></div>
                     </div>
                 </div>
                 <footer>
                     <div className="social-icons">
-                            <i className="">facebook</i>
-                            <i className="">instagram</i>
-                            <i className="">twitter</i>
-                            <i className="">linkedin</i>
-                            <i className="">vimeo</i>
+                            <div><i className="fa fa-facebook"></i></div>
+                            <div><i className="fa fa-instagram"></i></div>
+                            <div><i className="fa fa-twitter"></i></div>
+                            <div><i className="fa fa-linkedin"></i></div>
+                            <div><i className="fa fa-vimeo"></i></div>
                     </div>
-                    <div className="endDiv">Genesys 2020</div><div className="endDiv">Privacy Statement</div>
+                    <div className="copyrights">
+                        <div className="endDiv">Genesys 2020</div><div className="endDiv">Privacy Statement</div>
+                    </div>
+                    
                 </footer>
             </section>
         </>
