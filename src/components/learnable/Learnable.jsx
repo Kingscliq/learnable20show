@@ -107,7 +107,7 @@ function Learnable() {
             </section>
             <section>
 
-                {/* experinecing Section errors */}
+                {/* Unusual Learning Experience */}
                 <div className="section grid-gap-50">
                     
                     <div>
@@ -118,10 +118,7 @@ function Learnable() {
                             <p className="text-primary p">At Genesys, we believe in the learning processes as much as we believe in the results. By applying a combination of active and social learning methodologies, we create an environment that involves the learner in the learning process while providing avenues for collaboration and peer-to-peer mentorship.
                             </p>
 
-                            <p className="text-primary p">Our methods over the years have helped us discover ways to take education out of the classroom. We introduce our interns to learning by experimentation and problem-solving. To us, every task is an opportunity to learn.</p>
-
-
-                        
+                            <p className="text-primary p">Our methods over the years have helped us discover ways to take education out of the classroom. We introduce our interns to learning by experimentation and problem-solving. To us, every task is an opportunity to learn.</p>                   
 
                     </div>
                 </div>

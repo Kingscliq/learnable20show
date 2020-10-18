@@ -125,10 +125,13 @@ code {
 }
 .section{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(22.813rem, 1fr));
    justify-items: center;
    align-items: center;
    padding: 40px;
+}
+.land-section{
+
 }
 .section-column-2{
   display: grid;
@@ -221,7 +224,7 @@ code {
   z-index: 1;
 }
 
-.menu-wrap .toggler {
+.menu-wrap .toggler{
   position: absolute;
   top: 0;
   right: 0;
@@ -397,7 +400,9 @@ code {
     grid-gap: '20px'
 }
 
-
+.d-none{
+  display: none
+}
 
 .h3{
     font-size: 'var(--primary-font)';
@@ -539,7 +544,7 @@ ul{
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
-  padding: 20px
+  padding: 20px;
 }
 footer{
   display: flex;
@@ -569,3 +574,26 @@ footer .social-icons .fa{
   text-transform: uppercase;
  
 }
+#land-hero-sm{
+  display: none;
+}
+/* responsive footer */
+@media only screen and (max-width:768px){
+  .menu-wrap{
+    display: block;
+  }
+  section{
+    display: grid;
+    grid-template-columns: minmax(400px, 1fr);
+}
+  section #land-hero{
+    display: none
+  }
+  #land-hero-sm{
+    display: block
+  }
+  #land-desc{
+    display: none;
+  }
+}
+

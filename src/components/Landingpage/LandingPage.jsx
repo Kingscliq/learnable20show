@@ -6,14 +6,14 @@ function LandingPage() {
         <div>
             <section>
                 <div className="section">
-                    <h3 className ="heading text-primary primary-font">Genesys provides opportunities for young Nigerian techies
+                    <h3 className ="heading text-primary primary-font" id="land-header">Genesys provides opportunities for young Nigerian techies
                         and opportunities to grow and innovate.
                     </h3> 
                     <div></div>
                     
                 </div>
                 <div className="section">
-                    <p className ="p text-primary primary-font">
+                    <p className ="p text-primary primary-font" id="land-desc">
                         We understand that opportunities are scarce in these parts. We are either creating or exposing our people to these opportunities.
                     </p> 
                     <div></div>
@@ -22,15 +22,24 @@ function LandingPage() {
                 
             </section>
             <section>
-                <div className="hero-section">
+                <div className="hero-section" id="land-hero">
                     <div>
                         <img src="../images/skip.svg"/>
                     </div>
                     <div>
-                    <img src="../images/Rectangle 36.jpg"/>
-                </div>
+                        <img src="../images/Rectangle 36.jpg"/>
+                    </div>
 
             </div>
+            </section>
+            <section>
+                <div id="land-hero-sm">
+                    <div className="learnableHero">
+                        <div className="tiny-circle bg-tertiary"><i className="fa fa-play text-light"></i></div>
+                        <p className="text-light font-primary">Discover the Learnable Experience</p>
+                    </div>
+
+                </div>
             </section>
             
             <section>
@@ -40,7 +49,7 @@ function LandingPage() {
                     </div>
                     <div className="section-flex-space-between">
                         <h3 className="text-primary font-primary heading">Learnable</h3>
-                            <p className="text-primary font-secondary">
+                            <p className="p text-primary font-secondary">
                                 Every year, young Nigerians are launching new careers in the technology industry. Find out how Genesys is helping them do it.
                             </p>
                     <div><a href="#" className="btn-link text-tertiary">Learn More</a></div>
@@ -55,7 +64,7 @@ function LandingPage() {
                 <div className="section grid-gap-20">
                     <div className="section-column-3">
                         <h3 className="text-primary font-primary heading">Agora</h3>
-                            <p className="text-primary font-secondary">We are reimagining the workplace and how people work. Find out how our co-working spaces can help you enjoy the work that you do.</p>
+                            <p className="p text-primary font-secondary">We are reimagining the workplace and how people work. Find out how our co-working spaces can help you enjoy the work that you do.</p>
                         <div> <a href="#" className="btn-link text-tertiary">Learn More</a></div>
 
                     </div>
@@ -72,7 +81,7 @@ function LandingPage() {
                     </div>
                     <div className="section-column-3">
                         <h3 className="text-primary font-primary heading">StartZone</h3>
-                            <p className="text-primary">The business environment is harsh for early-stage businesses. We can help you rise above it all.</p>
+                            <p className="p text-primary">The business environment is harsh for early-stage businesses. We can help you rise above it all.</p>
                         <div> <a href="#" className="btn-link text-tertiary">Here’s How</a></div>
 
                     </div>
@@ -119,7 +128,7 @@ function LandingPage() {
                     </div>
                         <div className="section-column-3">
                             <h3 className="text-light heading font-primary">The best team in the world</h3>
-                                <p  className="text-light">We work with the most amazing people our industry has to offer. They are really passionate about making a difference</p>
+                                <p  className="p text-light">We work with the most amazing people our industry has to offer. They are really passionate about making a difference</p>
                             <div> <a href="#" className="btn-link text-tertiary">See team</a></div>
                     </div>
                 </div>

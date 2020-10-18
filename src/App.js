@@ -17,12 +17,13 @@ function App() {
       {/* <Header/>
       <Todos /> */}
       <NavBar/>
-      <SecondaryNav/>
-      <SecondFooter/>
+      {/* <SecondaryNav/> */}
+       <LandingPage/>
       {/* <ProductDes/> */}
+      <SecondFooter/>
       {/* <Learnable/> */}
       {/* <SoftDev/> */}
-      {/* <LandingPage/> */}
+     
       <Footer/>
     </>
   );
