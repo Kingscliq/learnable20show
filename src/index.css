@@ -75,6 +75,9 @@ code {
  .font-secondary{
    font-family: var(--secondary-font)
  }
+ .text-orange{
+   color: var(--color-orange)
+ }
  .heading{
    font-size: 2.5em;
    padding: 20px 0px;

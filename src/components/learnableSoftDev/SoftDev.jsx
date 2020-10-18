@@ -7,7 +7,7 @@ function SoftDev() {
             <section>
                 <div className="section-column-2" style={{justifyItems: 'center'}}>
                     <header>
-                        <h1 className="heading font-primary text-primary" style={{fontSize:'96px', maxWidth: '522px', fontWeight: '900' }}>The Learnable Software Developer</h1>
+                        <h1 className="heading font-primary text-primary" style={{fontSize:'96px', maxWidth: '522px', fontWeight: '900' }}>The Learnable Product Designer</h1>
                     </header>
                     <figure className="profile-dev bg-tertiary">
                 
@@ -20,6 +20,7 @@ function SoftDev() {
             <section>
                 <div className="section-column-2" style={{padding: '70px 80px'}}>
                     <article>
+                        
                         <p className="p font-primary text-primary" >
                              Creativity means a lot to us. So we look for people who can think both logistically and artistically, and who know that limits are made to be pushed. We value skill and aptitude, but we honor those who care about working with their team to add the Genesys flavour to every project.
                         </p><br/><br/>
