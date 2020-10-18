@@ -77,7 +77,8 @@ code {
  }
  .heading{
    font-size: 2.5em;
-   padding: 20px 0px
+   padding: 20px 0px;
+   font-weight: 900;
  }
  .heading1{
   font-size:  2.125em;
@@ -191,7 +192,19 @@ code {
     position: relative;
   
  }
+ .profile-dev{
+    height: 338px;
+    width: 338px;
+    border-radius: 50%;
+    position: relative;
+  
+ }
  .profile img{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+ }
+ .profile-dev img{
    width: 100%;
    height: 100%;
    border-radius: 50%;

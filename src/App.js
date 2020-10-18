@@ -5,6 +5,7 @@ import NavBar from './components/NavBar/MainNav'
 import SecondaryNav from './components/NavBar/SecondaryNav'
 import LandingPage from './components/Landingpage/LandingPage';
 import Learnable from './components/learnable/Learnable'
+import SoftDev from './components/learnableSoftDev/SoftDev'
 import Footer from './components/Footer/Footer'
 
 
@@ -15,7 +16,8 @@ function App() {
       <Todos /> */}
       <NavBar/>
       <SecondaryNav/>
-      <Learnable/>
+      {/* <Learnable/> */}
+      <SoftDev/>
       {/* <LandingPage/> */}
       {/* <Footer/> */}
     </>
