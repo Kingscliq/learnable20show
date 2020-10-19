@@ -582,13 +582,19 @@ footer .social-icons .fa{
 #land-desc-sm{
   display: none;
 }
+#sec-footer{
+  height: '306px';
+  padding: '0px'
+}
 #learnable-sec-sm, #codeville-sm{display: none}
 #agora-img-sm{display: none}
 .subscribe{
   border: none;
   border-bottom: 1px solid var(--primary-color);
   background: transparent;
-  outline: none
+  outline: none;
+  color: var(--primary-color);
+  font-family: var(--secondary-font)
 }
 /* responsive footer */
 @media only screen and (max-width:768px){
@@ -631,7 +637,38 @@ footer .social-icons .fa{
     #best-team p{
       text-align: center
     }
-    
+
+
+  /* Second footer Responsive */
+    #sec-footer{
+      display: flex;
+      flex-direction: column;
+      height: 500px
+    }
+    #to-top{
+      display: none;
+    }
+    #sec-footer-main{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 600px;
+      text-align: center;
+      width: 100vw   
+
+    }
+    #sec-footer-main p{
+      text-align: left;
+      width: 100%
+    }
+    #sec-footer-main input{
+      width: 100%
+    }
+    #sec-footer-main a{
+      display: inline-block;
+      margin-top: 30px
+    }
+
     
 
   }
