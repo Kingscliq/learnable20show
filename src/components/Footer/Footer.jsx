@@ -6,18 +6,18 @@ function Footer() {
         <>
            
             <section>
-                <div className="main-footer font-secondary text-primary">
+                <div className="main-footer font-secondary text-primary" id="main-footer">
                     <div className="footer-links">
-                        <ul style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height:'200px'}}>
-                            <li><p><a href="" className="btn-link text-primary">Build Software</a></p></li>
-                            <li><p><a href=""  className="btn-link text-primary">Design Different</a></p></li>
-                            <li><p><a href=""  className="btn-link text-primary">Apply Your Knowledge</a></p></li>
-                            <li><p><a href=""  className="btn-link text-primary">FAQ</a></p></li>
+                        <ul>
+                            <li><p><a href="" className="btn-links text-primary">Build Software</a></p></li>
+                            <li><p><a href=""  className="btn-links text-primary">Design Different</a></p></li>
+                            <li><p><a href=""  className="btn-links text-primary">Apply Your Knowledge</a></p></li>
+                            <li><p><a href=""  className="btn-links text-primary">FAQ</a></p></li>
                         </ul>
                         
                     </div>
                     
-                    <div className="footer-address" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height:'150px'}}>
+                    <div className="footer-address" style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height:'150px', marginTop:'20px'}}>
                         <div>
                             Our Local Campus center: Kilometer 7, Enugu/Port Harcourt, 
                             Expressway, Centenary City, Enugu. Nigeria

@@ -108,6 +108,15 @@ code {
   letter-spacing: 1.25px;
   text-transform: uppercase;
 }
+.btn-links{
+  font-size: 15px;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
 .btn-bordered{
   border: 1px solid var(--primary-color);
   padding: 10px 20px;
@@ -435,7 +444,8 @@ code {
   top: 0px;
   align-items: center;
   justify-items: center;
-  padding-left: 40px
+  padding-left: 40px;
+  grid-gap: 50px
 }
 .footer-main{
   display: grid;
@@ -596,6 +606,12 @@ footer .social-icons .fa{
   color: var(--primary-color);
   font-family: var(--secondary-font)
 }
+.footer-links ul{
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  height:200px
+}
 /* responsive footer */
 @media only screen and (max-width:768px){
     .menu-wrap{
@@ -654,7 +670,7 @@ footer .social-icons .fa{
       justify-content: space-between;
       height: 600px;
       text-align: center;
-      width: 100vw   
+      width: 100vw 
 
     }
     #sec-footer-main p{
@@ -669,8 +685,24 @@ footer .social-icons .fa{
       margin-top: 30px
     }
 
-    
+    /* Footer Responsive */
+    #main-footer{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      height: auto
+    }
+  .footer-links > ul > li{
+    text-align: center
+  }
+  .btn-link{
+    display: inline-block;
+    margin: 30px auto;
 
+  }
   }
     
 
