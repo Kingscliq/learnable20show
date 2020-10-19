@@ -56,7 +56,7 @@ function LandingPage() {
             <section>
                 <div className="section grid-gap-20">
                     <div>
-                        <img src="../images/photo.png"/>
+                        <img src="../images/Photo.png"/>
                     </div>
                     <div className="section-flex-space-between" id="learnable-sec">
                         <h3 className="text-primary font-primary heading">Learnable</h3>
