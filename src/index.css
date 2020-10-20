@@ -10,7 +10,6 @@
    
     --primary-font: 'Roboto', sans-serif;
     --secondary-font: 'Nunito', sans-serif;
-
 }
 
 *{
@@ -124,6 +123,7 @@ code {
 }
 
 .p{
+
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
@@ -415,7 +415,7 @@ code {
 }
 
 .h3{
-    font-size: 'var(--primary-font)';
+    font-family: 'var(--primary-font)';
     font-size: '40px';
     font-weight: '900';
     line-height: '44px';
@@ -496,12 +496,13 @@ ul{
   text-align: left;
   border-radius: 50%;
   box-shadow: 4px 4px 40px #333;
-  z-index: 22
+  z-index: 1;
+  margin-left: 20px
 }
 .learnableHero{
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('/images/Rectangle 4 (3).jpg');
   height: 460px;
-  background-size: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   display: flex;
@@ -585,6 +586,24 @@ footer .social-icons .fa{
   text-transform: uppercase;
  
 }
+#secondary-nav{
+    height: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-disc{
+  display: flex;
+  justify-content: space-between
+}
+#home-desc-p{
+  margin-left: 30px;
+  margin-top:-100px;
+  
+}
+
 /* Responsive Designs */
 #land-hero-sm{
   display: none;
@@ -612,6 +631,34 @@ footer .social-icons .fa{
   justify-content: space-between;
   height:200px
 }
+#othings-sm{
+  display: none
+}
+#home-header{
+  height: 242px;
+  padding: 0px 60px
+}
+#home-main-heading{
+  font-size: 96px;
+}
+#home-header-section{
+  padding: 30px
+}
+#home-hero-sec{
+  margin-top:150px
+}
+#home-num-sec{
+  padding: 30px 150px 10px
+}
+.home-num-div{
+  width: 134px
+}
+#home-profile-sm{
+display: none
+}
+#home-learn-to h3{
+  width:550px;
+}
 /* responsive footer */
 @media only screen and (max-width:768px){
     .menu-wrap{
@@ -630,7 +677,7 @@ footer .social-icons .fa{
     }
     #land-desc{display: none}
     #land-desc-sm{display: block}
-    #learnable-sec, #codeville, #othings{display: none}
+    #learnable-sec, #codeville, #othings, #home-profile{display: none}
     #learnable-sec-sm, #agora-sec, #startzone-sec{
       display: flex;
       text-align: center;
@@ -638,7 +685,7 @@ footer .social-icons .fa{
       justify-content: space-between;
     }
     #agora-img{display: none}
-    #agora-img-sm, #codeville-sm, #othings-sm{display: block;}
+    #agora-img-sm, #codeville-sm, #othings-sm, #home-profile-sm{display: block;}
     #gen-img-div{
       display: grid;
       grid-template-columns: 1fr;
@@ -659,7 +706,7 @@ footer .social-icons .fa{
     #sec-footer{
       display: flex;
       flex-direction: column;
-      height: 500px
+      height: 100%
     }
     #to-top{
       display: none;
@@ -703,6 +750,128 @@ footer .social-icons .fa{
     margin: 30px auto;
 
   }
+    #secondary-nav{
+      display: none
+    }
+
+  /* Home Page Responsive */
+  #home-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: auto;
+    padding: 10px;
+    width: 100%
+  }
+  #home-header div{
+    margin: 10px auto;
+  }
+  #home-main-heading{
+    font-size: 40px;
+    text-align: center;
+    width: 100%
+  }
+  #home-header-section{
+    padding: 0px;
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  .empty-div{
+    display: none
+  }
+#home-disc{
+  display: flex;
+  justify-content: space-between
+}
+#home-description{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: auto;
+}
+.circle{
+  height: 170px;
+  width: 170px;
+  box-shadow: 4px 4px 10px #333;
+  
+}
+#home-desc-p{
+  margin-left: 30px;
+  margin-top:10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#home-hero-sec{
+  margin-top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+#hero-down-icon{
+  display: none
+}
+#hero-sec{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('/images/Rectangle 4 (3).jpg');
+}
+#home-hero-sec{
+  background-image: none
+}
+#home-num-sec{
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center
+
+}
+#home-num-div{
+  width: 100%
+}
+#home-learn-exp{
+  width: 100%
+}
+#home-learn-exp h3, #home-learn-exp p{
+  text-align: center;
+}
+#home-learn-to{
+  padding: 40px;
+  text-align: center;
+  width: 100%
+}
+#home-learn-to h3 , #home-learn-to p, #home-learn-to a{
+  text-align: center;
+}
+#home-learn-to h3{
+  width: 400px
+}
+.text-grid{
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%
+  
+}
+.text-grid-card{
+  height: 200px;
+  width:100%;
+  padding: 10px
+  
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+
   }
     
 

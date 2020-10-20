@@ -1,25 +1,22 @@
 import React from 'react'
+import {BrowserRouter as Router, Route, Switch, Redirect, Link } from 'react-router-dom'
 import '../../index.css'
 
 const nav = {
-    height: '48px',
-    width: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
+    
 
 }
 function SecondaryNav() {
     return (
         <>
-            <div className="bg-primary text-light nav" style={nav}>
+            <div className="bg-primary text-light nav" style={nav} id="secondary-nav">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Software Developers</a></li>
-                    <li><a href="">Product Designers</a></li>
-                    <li><a href="">Apply</a></li>
-                    <li><a href="">Journal</a></li>
-                    <li><a href="">FAQ</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/learnable-software-developer">Software Developers</Link></li>
+                    <li><Link to="/learnable-product-designer">Product Designers</Link></li>
+                    <li><Link to="/apply">Apply</Link></li>
+                    <li><Link to="/journal">Journal</Link></li>
+                    <li><Link to="/faq">FAQ</Link></li>
                 </ul>
             </div>
         </>

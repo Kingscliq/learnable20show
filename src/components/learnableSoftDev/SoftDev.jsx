@@ -1,9 +1,11 @@
 import React from 'react'
+import SecondaryNav from '../NavBar/SecondaryNav'
 import '../../index.css'
 
 function SoftDev() {
     return (
         <>
+          <SecondaryNav/>
             <section>
                 <div className="section-column-2" style={{justifyItems: 'center'}}>
                     <header>

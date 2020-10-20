@@ -1,8 +1,10 @@
 import React from 'react'
+import SecondaryNav from '../NavBar/SecondaryNav'
 
 function ProductDes() {
     return (
         <>
+          <SecondaryNav/>
             <section>
                 <div className="section-column-2" style={{justifyItems: 'center'}}>
                     <header>

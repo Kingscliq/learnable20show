@@ -1,15 +1,15 @@
 import React from 'react'
+import SecondaryNav from '../NavBar/SecondaryNav'
 import '../../index.css'
 
 
-const divWidth ={
-    width: '134px'
-}
+
 function Learnable() {
     return (
         <>
+          <SecondaryNav/>
             <section>
-                <div className="bg-warn section-column-2" style={{ height: '242px', padding: ' 0px 60px'}}>
+                <div id="home-header" className="bg-warn section-column-2">
                     <div>
                         <h4 className="heading1 text-primary font-primary">Coming soon: Learnable ‘20</h4>
                         <p className="text-primary font-secondary">We've started taking in applications for the next batch of learnable interns. Applications are on till the 21st of Febuary</p>
@@ -20,23 +20,23 @@ function Learnable() {
                     </div>
                 </div>
             </section>
-            <section style={{padding: '30px'}}>
+            <section id="home-header-section">
                 <div className="section">
-                    <h3 className ="heading text-primary primary-font" style={{fontSize:'96px'}}>Everything is Learnable
+                    <h3 className ="heading text-primary primary-font" id="home-main-heading">Everything is Learnable
                     </h3> 
-                    <div></div>
+                    <div className="empty-div"></div>
                     
                 </div>
-                <div className="section-column-4">
-                    <p className ="p text-primary primary-font" style={{marginLeft: '30px', marginTop:'-100px'}}>
+                <div className="section-column-4" id="home-description">
+                    <p id="home-desc-p" className ="p text-primary primary-font">
                              Learnable is the perfect product development internship program brought to you by Genesys.
                     </p> 
-                    <div></div>
-                    <div style={{display: 'flex', justifyContent:'space-around'}}>
+                    <div className=""></div>
+                    <div id="home-disc">
                         <div className="circle bg-tertiary">
                             <div>
                                 <h4 className="heading2 text-primary" style={{textDecoration:'underline'}}>Development <i className="fa fa-angle-right"></i></h4>
-                                    <p className="text-primary">What to expect</p>
+                            <p className="text-primary">What to expect</p>
                             </div>
                                
                             </div>
@@ -53,34 +53,34 @@ function Learnable() {
                 </div>                   
                 
             </section>
-            <section>
-                <div className="hero-section" style={{marginTop:'-150px'}}>
-                    <div>
+            <section id="hero-sec">
+                <div className="hero-section" id="home-hero-sec">
+                    <div id="hero-down-icon">
                         <img src="../images/skip.svg"/>
                     </div>
                 <div className="learnableHero">
                     <div className="tiny-circle bg-tertiary"><i className="fa fa-play text-light"></i></div>
-                    <p className="text-light font-primary">Discover the Learnable Experience</p>
+                    <p classNam="text-light font-primary">Discover the Learnable Experience</p>
                     </div>
                 </div>
             </section>
             <section>
-                <div className="section-col-4" style={{padding: '30px 150px 10px'}}>
-                    <div style={divWidth}>
+                <div className="section-col-4" id="home-num-sec">
+                    <div id="home-num-div">
                         <h1 className="heading text-tertiary font-primary" style={{fontSize: '40px', fontWeight: '900'}}>305</h1>
                         <p className="font-secondary p text-primary">
                             Young Software Developers Trained</p>
                             
                     </div>
-                    <div style={divWidth}>
+                    <div>
                         <h1 className="heading text-tertiary font-primary" style={{fontSize: '40px', fontWeight: '900'}}>2100</h1>
                         <p className="font-secondary p text-primary">Tech Enthusiasts</p>
                     </div>
-                    <div style={divWidth}>
+                    <div className="home-num-div">
                         <h1 className="heading text-tertiary font-primary" style={{fontSize: '40px', fontWeight: '900'}}>8</h1>
                         <p className="font-secondary p text-primary">StartUps Incubated</p>
                     </div>
-                    <div style={divWidth}>
+                    <div className="home-num-div">
                         <h1 className="heading text-tertiary font-primary" style={{fontSize: '40px', fontWeight: '900'}}>250</h1>
                         <p className="font-secondary p text-primary">Small Businesses supported</p>
                     </div>
@@ -88,6 +88,12 @@ function Learnable() {
             </section>
             <section>
                 <div className="section grid-gap-20">
+                  <div id="home-profile-sm">
+                        <div className="profile bg-tertiary">
+                            <img src="../images/Cutout 1.png"/>
+                        </div>
+                        
+                    </div>
                     <div className="section-flex-space-between">
                             <h3 className="text-primary font-primary heading">We Make People Great</h3>
                                 <p className="text-primary p">As part of our calculated efforts to contribute to the emerging knowledge and skills driven economy of Nigeria, Learnable is a 6-month product development training program with an emphasis on software programming and product design. It is for outstanding young individuals who are passionate about building a career in the software industry.</p> <p className="text-primary p">We primarily educate and groom software developers and designers, preparing them for the industry. </p>
@@ -95,7 +101,7 @@ function Learnable() {
                             
 
                     </div>
-                    <div>
+                    <div id="home-profile">
                         <div className="profile bg-tertiary">
                             <img src="../images/Cutout 1.png"/>
                         </div>
@@ -109,13 +115,13 @@ function Learnable() {
             <section>
 
                 {/* Unusual Learning Experience */}
-                <div className="section grid-gap-50">
+                <div className="section grid-gap-50" id="home-learn-exp">
                     
                     <div>
                         <img src="../images/Photo (8).jpg"/>
                     </div>
                     <div className="section-flex-space-between">
-                        <h3 className="text-primary font-primary heading" style={{width:'550px'}}>An Unusual Learning Experience</h3>
+                        <h3 className="text-primary font-primary heading" >An Unusual Learning Experience</h3>
                             <p className="text-primary p">At Genesys, we believe in the learning processes as much as we believe in the results. By applying a combination of active and social learning methodologies, we create an environment that involves the learner in the learning process while providing avenues for collaboration and peer-to-peer mentorship.
                             </p>
 
@@ -130,12 +136,12 @@ function Learnable() {
             <section>
 
                 {/* card grid section 1 */}
-                <div className="section grid-gap-50">
+                <div className="section grid-gap-50" id="home-learn-to">
                     <div className="section-flex-space-between">
                     <p className="font-secondary btn-link text-primary" style={{textTransform: 'uppercase'}}>For  Developers</p>
-                        <h3 className="text-primary font-primary heading" style={{width:'550px'}}>Learn to Build Software the Right Way</h3>
-                            <p className="text-primary p">We love to build stuff. Really awesome stuff. That’s why we have developed a learning program that will empower you to create amazing software the right way
-                            </p>
+                        <h3 className="text-primary font-primary heading">Learn to Build Software the Right Way</h3>
+                        <p className="text-primary p">We love to build stuff. Really awesome stuff. That’s why we have developed a learning program that will empower you to create amazing software the right way
+                          </p>
 
                             <p className="text-primary p">We believe in learning through experimentation. Our aim is to nurture and grow bright young minds from the get-go because that’s how our industry will thrive.</p>
 
