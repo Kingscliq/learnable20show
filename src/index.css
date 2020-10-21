@@ -616,7 +616,7 @@ footer .social-icons .fa{
   padding: '0px'
 }
 #learnable-sec-sm, #codeville-sm{display: none}
-#agora-img-sm{display: none}
+#agora-img-sm, #journal-sm{display: none}
 .subscribe{
   border: none;
   border-bottom: 1px solid var(--primary-color);
@@ -659,6 +659,17 @@ display: none
 #home-learn-to h3{
   width:550px;
 }
+#text-grid-md{
+  display: none;
+}
+#brand{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 243px; 
+  padding:50px;
+}
+ 
 /* responsive footer */
 @media only screen and (max-width:768px){
     .menu-wrap{
@@ -854,11 +865,86 @@ display: none
   
 }
 .text-grid-card{
+
   height: 200px;
   width:100%;
-  padding: 10px
+  padding: 10px;
   
 }
+#p-sm{
+  text-align: center
+}
+#for-des-sm{
+  padding: 50px;
+  /* display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-direction: column; 
+}
+
+ 
+#for-des-sm p, #for-des-sm a{
+  text-align: center;
+  padding: 30px;
+}
+#for-des-sm h3{
+  text-align: center;
+}
+
+#text-grid-sm{
+  display: block;
+  text-align: center
+}
+#eligibility{
+  text-align: center;
+  width: 550px;
+}
+#eligibility > div > p{
+  text-align: center;
+  padding: 20px;
+  margin: 10px
+}
+#home-our-culture{
+  text-align: center
+}
+#home-our-culture p{
+  text-align: center
+}
+#fun-learn, #fun-learn p{
+  text-align: center
+}
+#expert-sec, #class-learn, #apply, #apply p{
+  text-align: center
+}
+#journal{
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+#journal-md{
+  display: none
+}
+#journal-sm{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+#brand{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 243px; 
+  padding:50px;
+  flex-direction: column;
+  margin-bottom: 100px
+  
+}
+#brand > div{
+  margin-bottom: 20px
+}
+
+
 
 
 

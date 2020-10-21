@@ -178,7 +178,7 @@ function Learnable() {
 
     {/* Card grid section two */}
     <div className="section grid-gap-50">
-        <div className="text-grid">
+        <div className="text-grid" id="text-grid-md">
                 <div className="text-grid-card bg-primary">
                     <h1 className="heading text-light font-primary">Design User Interfaces</h1>
                 </div>
@@ -198,16 +198,36 @@ function Learnable() {
                     <h1 className="heading text-light font-primary">Brand Products</h1>
                 </div>
         </div>
-        <div className="section-flex-space-between">
-        <p className="font-secondary btn-link text-primary" style={{textTransform: 'uppercase'}}>For  Designers</p>
+        <div className="section-flex-space-between" id="for-des-sm">
+        <p className="font-secondary btn-link text-primary" style={{textTransform: 'uppercase'}}>For Designers</p>
             <h3 className="text-primary font-primary heading" style={{width:'550px'}}>Design Different</h3>
-                <p className="text-primary p">We love to make things work perfectly. That’s why our design learning path exposes you to  the science of user-oriented design.
+                <p className="text-primary p" id="p-sm">We love to make things work perfectly. That’s why our design learning path exposes you to the science of user-oriented design.
                 </p>
 
                 <p className="text-primary p">Design is at the heart of everything we do at Genesys. Right from the start of the program, you’ll get your hands dirty as you get practically involved in the world’s most modern design concepts. At Genesys, we’re building designers who put the users first.</p>
 
-            <div> <a href="#" className="btn-link text-tertiary">Here’s How</a></div>
+            <div> <a href="#" id="link" className="btn-link text-tertiary">Here’s How</a></div>
 
+        </div>
+         <div className="text-grid" id="text-grid-sm">
+                <div className="text-grid-card bg-primary">
+                <h1 className="heading text-light font-primary">Design User Interfaces</h1>
+                </div>
+                <div className="text-grid-card bg-orange">
+                    <h1 className="heading text-light font-primary">Craft User Experiences</h1>
+                </div>
+                <div className="text-grid-card bg-warn">
+                    <h1 className="heading text-primary font-primary">Apply Design Thinking</h1>
+                </div>
+                <div className="text-grid-card bg-tertiary">
+                    <h1 className="heading text-light font-primary">Build Information Architecture</h1>
+                </div>
+                <div className="text-grid-card bg-secondary">
+                    <h1 className="heading text-light font-primary">Copy write for Projects</h1>
+                </div>
+                <div className="text-grid-card bg-orange" >
+                    <h1 className="heading text-light font-primary">Brand Products</h1>
+                </div>
         </div>
         
         
@@ -220,7 +240,7 @@ function Learnable() {
 <section>
 
                 {/* experinecing Section errors */}
-                <div className="section grid-gap-50">
+                <div className="section grid-gap-50" id="eligibility">
                               
                     <div className="section-flex-space-between">
                         <h3 className="text-primary font-primary heading" style={{width:'550px'}}>Who is Eligible?</h3>
@@ -243,7 +263,7 @@ function Learnable() {
             <section className="bg-orange">
 
                 {/* experinecing Section errors */}
-                <div className="section grid-gap-50">
+                <div className="section grid-gap-50" id="home-our-culture">
                     <div>
                         <img src="../images/Photo (10).jpg"/>
                     </div>
@@ -261,7 +281,7 @@ function Learnable() {
             <section className="bg-light">
 
                 {/* experinecing Section errors */}
-                <div className="section grid-gap-50">
+                <div className="section grid-gap-50" id="fun-learn">
                     
                     <div className="section-flex-space-between">
                         <h3 className="text-primary font-primary heading" style={{width:'550px'}}>Learning can be fun…</h3>
@@ -341,7 +361,7 @@ function Learnable() {
                     </div>
                         
                     
-                    <div className="section-flex-space-between">
+                    <div className="section-flex-space-between"  id="expert-sec">
                         <h3 className="text-primary font-primary heading" style={{width:'550px', fontSize: '60px'}}>Learn from the Experts</h3>
                             <p className="text-primary p">As a learnable intern, you will be learning from the best software developers and product designers our industry has to offer. You will spend the first 3 months in the classroom with industry experts who have a wealth of experience from developing amazing products for various customers in our industry.
                             </p>
@@ -356,7 +376,7 @@ function Learnable() {
             <section className="bg-light">
 
                 {/* experinecing Section errors */}
-                <div className="section grid-gap-50">
+                <div className="section grid-gap-50" id="class-learn">
                     
                     <div className="section-flex-space-between">
                         <h3 className="text-primary font-primary heading" style={{width:'550px'}}>Learning doesn’t always have to be in the classroom</h3>
@@ -392,7 +412,7 @@ function Learnable() {
                 <section className="bg-primary">
 
                 {/* Apply Your Knowledge*/}
-                <div className="section grid-gap-50">
+                <div className="section grid-gap-50" id="apply">
                     <div>
                         <img src="../images/Photo (8).jpg"/>
                     </div>
@@ -518,7 +538,7 @@ function Learnable() {
                 
                     <div style={{marginBottom: '50px'}}><a href="" className="btn-link text-tertiary">View All</a></div>
                         
-                    <div className="section-col-4 grid-gap-20" style={{justifyItems: 'start'}}>
+                    <div className="section-col-4 grid-gap-20" style={{justifyItems: 'start'}} id="journal-md">
                         
                                     <figure>
                                         <img src="../images/image 23.jpg"/>
@@ -570,8 +590,69 @@ function Learnable() {
                                     <small className="font-secondary">Theresa Brazen, Apr 9, 2020</small>
                                 </div>
                             </div>
+                    
+                  {/*JOURNAL - SM */}
+                                 <div className="section-col-4 grid-gap-20" style={{justifyItems: 'start'}} id="journal-sm">
+                        
+                                    <figure>
+                                        <img src="../images/image 23.jpg"/>
+                                    </figure>
+                                    <div>
+                                    <a href="" className="btn-link text-tertiary">Inspiration</a>
+                                </div>
+                                <div>
+                                    <h4 className="heading text-primary font-primary">Learn Design Thinking like a Pro and Build Projects that People will care about</h4>
+                                </div>
+                                {/* Scond section*/}
+                                    <figure>
+                                        <img src="../images/image 24.jpg"/>
+                                    </figure>
+                                    <div>
+                                    <a href="" className="btn-link text-tertiary">Inspiration</a>
+
+                                </div>
+                                <div>
+                                    <h4 className="heading text-primary font-primary">Learn Design Thinking like a Pro and Build Projects that People will care about</h4>
+                                </div>
+                                <div>
+                                    <small className="font-secondary">David Mong, Apr 9, 2020</small>
+                                </div>
+                                   {/*Third section*/}
+                                    <figure>
+                                        <img src="../images/image 25.jpg"/>
+                                    </figure>
+                                    <div>
+                                    <a href="" className="btn-link text-tertiary">Inspiration</a>
+                                </div>
+                                  <div>
+                                    <h4 className="heading text-primary font-primary">Learn Design Thinking like a Pro and Build Projects that People will care about</h4>
+                                </div>
+                                <div>
+                                    <small className="font-secondary">David Mong, Apr 9, 2020</small>
+                                </div>
+                                  {/* forth section*/}
+                                    <figure>
+                                        <img src="../images/image 26.jpg"/>
+                                    </figure>
+                                                       
+                                                           
+                                <div>
+                                    <a href="" className="btn-link text-tertiary">Inspiration</a>
+                                </div>
+                                
+                              
+                                
+                                <div>
+                                    <h4 className="heading text-primary font-primary">Learn Design Thinking like a Pro and Build Projects that People will care about</h4>
+                                </div>
+                                
+                                
+                                
+                                <div>
+                                    <small className="font-secondary">Theresa Brazen, Apr 9, 2020</small>
+                                </div>
+                            </div>
                        
-                                    
                             
                                
                                 
@@ -586,7 +667,7 @@ function Learnable() {
               
             </section>
             <section>
-                <div style={{display: 'flex', justifyContent:'space-between', alignItems: 'center', height:'243px', padding:'50px'}}>
+                <div id="brand">
                     <div><h1>Mentioned in</h1></div>
                     <div><img src="../images/brands (1).png"/></div>
                     <div><img src="../images/brands (2).png"/></div>
